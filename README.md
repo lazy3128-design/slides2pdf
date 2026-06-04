@@ -18,7 +18,7 @@ When researching webinars, product demos, online courses, talks, or recorded pre
 - Exports captured frames as WebP or PNG
 - Generates a PDF from extracted slides
 - Downloads extracted images as ZIP files
-- Splits large ZIP output into smaller volumes
+- Splits large ZIP output into 24 MB volumes for easier upload to AI tools and chat workflows
 - Supports multiple videos in one session
 - Lets users exclude moving regions such as presenter camera overlays or captions
 - Adjustable sensitivity for fewer or more extracted slides
@@ -31,6 +31,20 @@ When researching webinars, product demos, online courses, talks, or recorded pre
 - Extracting visual references from product walkthrough videos
 - Creating quick PDF summaries from screen-recorded slide decks
 - Preparing source material for qualitative analysis or note-taking
+- Preparing slide image batches for AI review tools such as Claude, ChatGPT, or other multimodal assistants
+
+## AI Review Workflow
+
+A common workflow is to extract slides from a long video, download the captured frames as ZIP files, and upload the ZIP volumes to an AI assistant for summarization, comparison, or research notes.
+
+To support this workflow, `slides2pdf` keeps ZIP downloads under 24 MB per volume. This makes large slide extraction jobs easier to upload in environments with file-size limits.
+
+Example workflow:
+
+1. Extract slide frames from a webinar, lecture, or product demo video.
+2. Download the WebP ZIP output.
+3. Upload one ZIP volume at a time to an AI assistant.
+4. Ask for a summary, comparison table, research notes, or follow-up questions.
 
 ## Privacy
 
@@ -51,6 +65,7 @@ The tool processes videos locally in the user's browser. It does not upload vide
 - Subtle slide changes may require higher sensitivity.
 - Very long videos can take time because processing happens in the browser.
 - Browser memory limits may affect very large files.
+- ZIP volume size is controlled by an approximate size limit, so real-world file size can vary slightly by browser and image format.
 
 ## Roadmap
 
