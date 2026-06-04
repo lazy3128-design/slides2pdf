@@ -12,15 +12,18 @@ When researching webinars, product demos, online courses, talks, or recorded pre
 
 `slides2pdf` helps convert video-based slide content into lightweight image/PDF materials that can be reviewed, annotated, summarized, or archived.
 
-## Features
+## Current Capabilities
 
-- Detects visual changes between video frames and captures likely slide transitions
-- Exports captured frames as WebP or PNG
+- Extracts slide-like frames from MP4/video files
+- Exports captured frames as images
 - Generates a PDF from extracted slides
-- Downloads extracted images as ZIP files
-- Splits large ZIP output into 24 MB volumes for easier upload to AI tools and chat workflows
+- Exports lightweight WebP images for smaller upload size
+- Supports PNG output when higher-quality images are needed
+- Lets users select exclusion zones for moving regions such as captions, presenter cameras, or overlays
+- Downloads extracted frames as ZIP files
+- Supports saving individual frames from the preview/output while processing
+- Splits ZIP output into upload-friendly volumes for AI and chat workflows
 - Supports multiple videos in one session
-- Lets users exclude moving regions such as presenter camera overlays or captions
 - Adjustable sensitivity for fewer or more extracted slides
 - Runs locally in the browser with no installation
 
@@ -76,6 +79,10 @@ The tool processes videos locally in the user's browser. It does not upload vide
 - Add test videos and benchmark examples
 - Improve accessibility and keyboard navigation
 - Package the tool as an installable PWA
+
+## Maintenance
+
+The project tracks release history in [CHANGELOG.md](CHANGELOG.md) and uses GitHub issues for planned improvements, bug reports, and research workflow ideas.
 
 ## Maintainer
 
