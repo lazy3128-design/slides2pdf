@@ -49,6 +49,8 @@ Example workflow:
 3. Upload one ZIP volume at a time to an AI assistant.
 4. Ask for a summary, comparison table, research notes, or follow-up questions.
 
+See the detailed [AI-assisted research workflow guide](docs/ai-workflow.md) for example prompts, privacy notes, and practical limitations.
+
 ## Privacy
 
 The tool processes videos locally in the user's browser. It does not upload video files to a server. The current implementation is a static HTML page using browser APIs.
