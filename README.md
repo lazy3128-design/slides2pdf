@@ -53,7 +53,9 @@ See the detailed [AI-assisted research workflow guide](docs/ai-workflow.md) for 
 
 ## Privacy
 
-The tool processes videos locally in the user's browser. It does not upload video files to a server. The current implementation is a static HTML page using browser APIs.
+The tool processes videos locally in the user's browser. It does not intentionally upload video files to a server. Generated images, ZIP volumes, and PDFs remain under user control unless the user chooses to share them with another service.
+
+See [Privacy and Data Handling](docs/privacy.md) for details about local processing, generated outputs, third-party uploads, and device considerations.
 
 ## How To Use
 
